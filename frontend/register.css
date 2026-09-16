@@ -1,0 +1,249 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #0f172a;
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.register-container {
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.register-card {
+    width: 100%;
+
+    max-width: 400px;
+
+    padding: 40px;
+
+    background: #1e293b;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.register-header {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+.register-header h1 {
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+
+.register-header p {
+    color: #94a3b8;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+
+.input-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #cbd5e1;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+
+.input-group input {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #334155;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    background: #0f172a;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+
+.input-group input::placeholder {
+    color: #64748b;
+}
+
+
+.input-group input:focus {
+    border-color: #3b82f6;
+
+    box-shadow:
+        0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+.register-button {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #3b82f6;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.register-button:hover {
+    background: #2563eb;
+}
+
+
+.register-button:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================
+   MENSAGEM
+========================= */
+
+.mensagem {
+    margin-top: 15px;
+
+    text-align: center;
+
+    color: #f87171;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+.register-footer {
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #334155;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+.register-footer p {
+    display: inline;
+
+    color: #94a3b8;
+}
+
+
+.register-footer a {
+    margin-left: 5px;
+
+    color: #60a5fa;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.register-footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 480px) {
+
+    .register-card {
+        padding: 30px 25px;
+    }
+
+}

@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #aaa;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#novoCountdown {
+    display: block;
+    margin: 20px auto 40px;
+
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+#countdowns {
+    display: grid;
+    gap: 20px;
+}
+
+.modal {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.7);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-conteudo {
+    background: #222;
+
+    width: 90%;
+    max-width: 450px;
+
+    padding: 30px;
+
+    border-radius: 12px;
+}
+
+.modal-conteudo h2 {
+    margin-bottom: 25px;
+}
+
+.modal-conteudo label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.modal-conteudo input {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 6px;
+}
+
+.modal-botoes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+.modal-botoes button {
+    padding: 10px 16px;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.countdown-card {
+    background: #222;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.countdown-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.countdown-card > p {
+    color: #aaa;
+    margin: 5px;
+}
+
+.tempo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.tempo div {
+    display: flex;
+    flex-direction: column;
+}
+
+.tempo span {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.tempo small {
+    color: #aaa;
+}
+
+.editar {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #c28e01;
+    color: white;
+}
+
+.excluir {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #444;
+    color: white;
+}
+
+.acoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.editar,
+.excluir {
+    transition: all 0.2s ease;
+}
+
+.editar:hover {
+    background: #d6a20a;
+    transform: translateY(-2px);
+}
+
+.excluir:hover {
+    background: #555;
+    transform: translateY(-2px);
+}

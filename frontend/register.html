@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Criar conta - Countdown</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/register.css"
+    >
+
+</head>
+
+
+<body>
+
+    <div class="register-container">
+
+        <div class="register-card">
+
+            <div class="register-header">
+
+                <h1>Criar conta</h1>
+
+                <p>
+                    Crie sua conta no Countdown
+                </p>
+
+            </div>
+
+
+            <form id="register-form">
+
+                <div class="input-group">
+
+                    <label for="username">
+                        Usuário
+                    </label>
+
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Digite seu usuário"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="password">
+                        Senha
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Digite sua senha"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="confirm-password">
+                        Confirmar senha
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirm-password"
+                        placeholder="Digite sua senha novamente"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="register-button"
+                >
+                    Criar conta
+                </button>
+
+            </form>
+
+
+            <p
+                id="mensagem"
+                class="mensagem"
+            ></p>
+
+
+            <div class="register-footer">
+
+                <p>
+                    Já possui uma conta?
+                </p>
+
+                <a href="/static/login.html">
+                    Entrar
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="/static/register.js"></script>
+
+</body>
+
+</html>
