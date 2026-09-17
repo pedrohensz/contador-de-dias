@@ -199,3 +199,21 @@ main {
     cursor: pointer;
     font-weight: bold;
 }
+
+@keyframes piscarVerde {
+    0% {
+        background-color: #09ff00;
+    }
+
+    50% {
+        background-color: #116600;
+    }
+
+    100% {
+        background-color: #00ff0d;
+    }
+}
+
+.card-concluido {
+    animation: piscarVerde 1s infinite;
+}

@@ -425,7 +425,7 @@ function atualizarCountdown(countdown, card) {
 
     // Quando chegar no momento do evento
     if (diferenca <= 0) {
-
+        card.classList.add("card-concluido")
         card.querySelector(".tempo").innerHTML = `
             <div class="mensagem-final">
                 🎉 Chegou o dia!
