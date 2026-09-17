@@ -643,5 +643,6 @@ function carregarFraseDoDia() {
 
 // *INICIAR*
 
-carregarCountdowns();
 carregarFraseDoDia();
+carregarCountdowns();
+
