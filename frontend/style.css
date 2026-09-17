@@ -202,15 +202,21 @@ main {
 
 @keyframes piscarVerde {
     0% {
-        background-color: #09ff00;
+        background-color: #0aff00;
+        box-shadow: 0 0 5px rgba(10, 255, 0, 0.4);
+        transform: scale(1);
     }
 
     50% {
-        background-color: #116600;
+        background-color: #19b315;
+        box-shadow: 0 0 25px rgba(10, 255, 0, 0.9);
+        transform: scale(1.02);
     }
 
     100% {
-        background-color: #00ff0d;
+        background-color: #0aff00;
+        box-shadow: 0 0 5px rgba(10, 255, 0, 0.4);
+        transform: scale(1);
     }
 }
 
