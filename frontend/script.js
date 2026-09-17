@@ -599,50 +599,7 @@ botaoSair.addEventListener("click", function() {
 
 // FRASE DO DIA
 
-function carregarFraseDoDia() {
-
-    const elementoFrase = document.getElementById("frase-do-dia");
-
-    fetch("https://www.drivebird.com/api/quotes/today")
-        .then(function(response) {
-
-            if (!response.ok) {
-                throw new Error("Erro ao buscar frase");
-            }
-
-            return response.json();
-
-        })
-        .then(function(dados) {
-
-            const frase = dados.data[0];
-
-            elementoFrase.innerHTML = `
-                <p class="frase">
-                    "${frase.quote}"
-                </p>
-
-                <span class="autor">
-                    — ${frase.author}
-                </span>
-            `;
-
-        })
-        .catch(function(error) {
-
-            console.error("Erro ao carregar frase:", error);
-
-            elementoFrase.innerHTML = `
-                <p class="frase">
-                    Keep going. You are closer than you think.
-                </p>
-            `;
-
-        });
-}
-
-
-async function buscarDados() {
+async function carregarFraseDoDia() {
 
     const elementoFrase = document.getElementById("frase-do-dia");
 
