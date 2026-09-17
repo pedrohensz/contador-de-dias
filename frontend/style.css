@@ -223,3 +223,10 @@ main {
 .card-concluido {
     animation: piscarVerde 1s infinite;
 }
+
+
+.card-concluido > p {
+    color: #000000;
+    margin: 5px;
+}
+    
