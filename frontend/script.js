@@ -8,6 +8,7 @@ const hora = document.getElementById("hora");
 
 const botaoCriar = document.getElementById("criar");
 const tituloModal = document.querySelector("#modal h2");
+const botaoSair = document.getElementById("sair");
 
 let countdownEditando = null;
 let cardEditando = null;
@@ -411,27 +412,44 @@ function calcularTempoRestante(countdown) {
 
 // *ATUALIZAR COUNTDOWN*
 
+
 function atualizarCountdown(countdown, card) {
 
-    const tempo = calcularTempoRestante(countdown);
+    const dataEvento = new Date(
+        `${countdown.data}T${countdown.hora}`
+    );
 
+    const agora = new Date();
+
+    const diferenca = dataEvento - agora;
+
+    // Quando chegar no momento do evento
+    if (diferenca <= 0) {
+
+        card.querySelector(".tempo").innerHTML = `
+            <div class="mensagem-final">
+                🎉 Chegou o dia!
+            </div>
+        `;
+
+        return;
+    }
+
+    const tempo = calcularTempoRestante(countdown);
 
     card.querySelector(".dias").textContent =
         tempo.dias;
 
-
     card.querySelector(".horas").textContent =
         tempo.horas;
-
 
     card.querySelector(".minutos").textContent =
         tempo.minutos;
 
-
     card.querySelector(".segundos").textContent =
         tempo.segundos;
-
 }
+
 
 
 // *FORMATAR DATA*
@@ -570,6 +588,13 @@ function excluirCountdown(id) {
 
 }
 
+botaoSair.addEventListener("click", function() {
+
+    sessionStorage.removeItem("token");
+
+    window.location.href = "/static/login.html";
+
+});
 
 // *INICIAR*
 
