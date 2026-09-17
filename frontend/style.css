@@ -9,7 +9,6 @@ body {
     background: #111;
     color: white;
     min-height: 100vh;
-
 }
 
 header {
@@ -128,8 +127,7 @@ main {
     padding: 30px;
     border-radius: 12px;
     text-align: center;
-    box-shadow:0 0 12px rgba(0,0,0,.35);
-    transition:.3s;
+    
 }
 
 .countdown-card h2 {
