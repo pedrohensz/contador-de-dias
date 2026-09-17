@@ -662,6 +662,11 @@ async function buscarDados() {
 
         // Converte a resposta para JSON
         const dados = await resposta.json();
+        console.log("DADOS RECEBIDOS:", dados);
+        console.log("TIPO DE DATA:", typeof dados.data);
+        console.log("DATA:", dados.data);    
+
+
 
         // Pega a primeira frase
         const frase = dados.data;
