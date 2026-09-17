@@ -641,6 +641,53 @@ function carregarFraseDoDia() {
         });
 }
 
+
+async function buscarDados() {
+
+    const elementoFrase = document.getElementById("frase-do-dia");
+
+    try {
+
+        // Faz a requisição
+        const resposta = await fetch(
+            "https://www.drivebird.com/api/quotes/today"
+        );
+
+        // Verifica se a requisição deu certo
+        if (!resposta.ok) {
+            throw new Error(
+                "Erro na requisição: " + resposta.status
+            );
+        }
+
+        // Converte a resposta para JSON
+        const dados = await resposta.json();
+
+        // Pega a primeira frase
+        const frase = dados.data[0];
+
+        // Mostra a frase na tela
+        elementoFrase.innerHTML = `
+            <p class="frase">
+                "${frase.quote}"
+            </p>
+
+            <span class="autor">
+                — ${frase.author}
+            </span>
+        `;
+
+    } catch (error) {
+
+        console.error("Erro ao carregar frase:", error);
+
+        elementoFrase.innerHTML = `
+            <p class="frase">
+                Keep going. You are closer than you think.
+            </p>
+        `;
+    }
+}
 // *INICIAR*
 
 carregarFraseDoDia();
