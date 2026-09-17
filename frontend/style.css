@@ -184,3 +184,18 @@ main {
     background: #555;
     transform: translateY(-2px);
 }
+
+.mensagem-final {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+#sair {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
