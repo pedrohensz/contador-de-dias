@@ -664,7 +664,7 @@ async function buscarDados() {
         const dados = await resposta.json();
 
         // Pega a primeira frase
-        const frase = dados.data[0];
+        const frase = dados.data;
 
         // Mostra a frase na tela
         elementoFrase.innerHTML = `
