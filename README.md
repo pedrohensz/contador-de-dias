@@ -144,7 +144,7 @@ Ou seja, um usuário pode possuir vários countdowns.
 Clone o repositório:
 
 ```bash
-git clone <URL_DO_REPOSITORIO>
+git clone https://github.com/pedrohensz/contador-de-dias/tree/main
 ```
 
 Entre na pasta:
